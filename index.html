@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MeetMe</title>
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script src="client.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+
+    <nav class="header">
+      <img class="logo" src="logo.png" alt="logo" />
+      <h1>MysteryMeet</h1>
+    </nav>
+
+    <div class="container"></div>
+
+    <div class="send">
+      <form action="#" id="send-container">
+        <input
+          type="text"
+          name="messageInp"
+          id="messageInp"
+          placeholder="Type a message"
+        />
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </div>
+
+
+  </body>
+</html>
