@@ -8,7 +8,6 @@
     ],
     "routes": [
         {
-            "type": "exact",
             "src": "/(.*)",
             "dest": "/"
             }
