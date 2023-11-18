@@ -4,6 +4,9 @@ const express = require("express");
 
 const app = express();
 
+const favicon = require('serve-favicon');
+const path = require('path');
+
 const http = require("http").createServer(app);
 
 const PORT = process.env.PORT || 3000;
@@ -13,6 +16,8 @@ const io = require("socket.io")(http);
 http.listen(PORT, () => {
   console.log(`Server is running on PORT ${PORT}`);
 });
+
+app.use (favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
 app.use(express.static(__dirname + "/public"));
 

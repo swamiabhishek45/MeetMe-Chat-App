@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MeetMe</title>
+    <!-- <link rel="icon" href="public/favicon.ico" type="image/x-icon"> -->
+
     <script defer src="/socket.io/socket.io.js"></script>
     <script src="client.js" defer></script>
+    <script src="faq.js" defer></script>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
   </head>
   <body>
-
-
     <nav class="header">
       <img class="logo" src="logo.png" alt="logo" />
       <h1>MysteryMeet</h1>
@@ -30,6 +35,42 @@
       </form>
     </div>
 
+    <div class="box">
+      <span class="close-btn">
+        <i class="fa-solid fa-xmark"></i>
+      </span>
+      <div class="media-icons">
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">1. What is Lorem Ipsum?</div>
+            <div class="faq-answer">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </div>
+          </div>
 
+          <div class="faq-item">
+            <div class="faq-question">2. Why do we use it?</div>
+            <div class="faq-answer">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">3. Is it free?</div>
+            <div class="faq-answer">Yes, Lorem Ipsum is free to use.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const closeBtn = document.querySelector(".close-btn");
+
+      closeBtn.addEventListener("click", () => {
+        closeBtn.classList.toggle("open");
+      });
+    </script>
   </body>
 </html>
