@@ -155,15 +155,6 @@ color: #444;
         /* Google Fonts - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-} */
-/* body {
-  background: #e3f2fd;
-} */
 .box {
   position: absolute;
   top: 50%;
@@ -231,6 +222,8 @@ a .tooltip::before {
   background-color: #fff;
 }
 .close-btn {
+  /* position: fixed; */
+  
   display: flex;
   align-items: center;
   justify-content: center;

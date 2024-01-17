@@ -13,11 +13,12 @@ const PORT = process.env.PORT || 3000;
 
 const io = require("socket.io")(http);
 
+app.use (favicon(path.join(__dirname, 'public', 'favicon.ico')));
+
 http.listen(PORT, () => {
   console.log(`Server is running on PORT ${PORT}`);
 });
 
-app.use (favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
 app.use(express.static(__dirname + "/public"));
 
